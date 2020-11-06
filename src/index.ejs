@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/semantic.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/semantic.min.js"></script>
+    <script src="js/index.js"></script>
+</head>
+<body>
+    <%- include("./partials/header") %>
+    <div class="search">
+        <div class="ui icon input">
+            <input type="text" class="search_bar" required placeholder="Procurar wallpaper...">
+            <i class="search icon"></i>
+        </div>
+        <button onclick="searchWallpapers(true)" class="ui button" style="height: 39px;">
+            Pesquisar
+        </button>
+        <div id="pagesbtn">
+            <button style="margin-bottom: 5px;" onclick="previousButton()" class="ui button"><</button>
+            <button style="margin-bottom: 5px;" class="ui button actualPage">1</button>
+            <button style="margin-bottom: 5px;" onclick="nextButton()" class="ui button">></button>
+        </div>
+        <div class="results">
+            <!--<div class="result" onclick="openWallpaper('942888')">
+                <img src="https:\/\/images.alphacoders.com\/942\/thumb-942888.png" alt="">
+                <div class="description">
+                    <p>Megumin</p>
+                </div>
+            </div>-->
+        </div>
+    </div>
+    <div class="ui page dimmer">
+        <div class="wallpaper content">
+          <div class="info">
+                <p class="title">Megumin</p>
+                <img src="https:\/\/images.alphacoders.com\/942\/thumb-942888.png" alt="">
+                <p class="uploaded">Enviado por: XXX</p>
+                <p class="category">Categoria: XXX</p>
+          </div>
+          <div class="downloads">
+            <button class="ui green button downloadWallpaper">Baixar Wallpaper</button>
+            <button class="ui primary button apply">Colocar como Wallpaper (Resolução Monitor)</button>
+            <button class="ui primary button applyIMG">Colocar como Wallpaper (Resolução Imagem)</button>
+          </div>
+          <div id="image-cropper-wrapper">
+
+          </div>
+        </div>
+    </div>
+</body>
+</html>

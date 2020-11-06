@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
+}
+html{
+    position: relative;
+}
+body{
+    background-color: #222;
+    color: #FFF;
+    overflow-y: auto!important;
+    margin: 0;
+}
+
+.titlebar {
+    position: fixed;
+}
+
+body::-webkit-scrollbar
+{
+    width: 2px;
+    background-color: rgb(25, 28, 42);
+    transition: all 0.2s;
+}
+
+body::-webkit-scrollbar-thumb
+{
+    background-color: #e344ff;
+}
+.container-after-titlebar{
+    width: 0px;
+    height: 0px;
+    display: none;
+}

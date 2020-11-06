@@ -1,0 +1,28 @@
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/semantic.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/semantic.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
+<script src="https://polyfill.io/v2/polyfill.min.js?features=IntersectionObserver"></script>
+<link rel="stylesheet" href="./css/global.css">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
+
+<script>
+  const remote = require ("electron").remote;
+  function minimizeApp(){
+    remote.getCurrentWindow().hide();
+  }  
+</script>
+<script>
+  const customTitlebar = require('custom-electron-titlebar');
+  
+  let MyTitleBar = new customTitlebar.Titlebar({
+    backgroundColor: customTitlebar.Color.fromHex('#000'),
+    shadow: true
+  })
+  MyTitleBar.updateTitle('AlphaCoders Desktop');
+</script>
+
+
+<script>if (window.module) module = window.module;</script>
+<script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
